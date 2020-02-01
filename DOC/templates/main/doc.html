@@ -1,0 +1,19 @@
+{% extends "main/index.html" %}
+{% block content %}
+<div class="container middle">
+    <form action="{% url 'genrate' %}" method="GET">
+        <div class="form-group select">
+            <label for="selectD">Select Document</label>
+                <select class="form-control" name="selectD" required>
+                  <option></option>
+                  {% for doc in docs %}
+                  <option value="{{ doc.id }}">{{ doc.d_name }}</option>
+                  {% endfor %}
+                </select>
+                <br>
+                <input type="submit" class="btn btn-outline-success" value="Generate">
+        </div> 
+    </form>
+    <a href="{% url 'deleteSession' %}"><button class="btn btn-outline-primary">Exit</button></a>
+</div>
+{% endblock %}

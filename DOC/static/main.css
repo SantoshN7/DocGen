@@ -1,0 +1,50 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    position: initial;
+}
+main{
+    padding: 5%;
+    position: inherit;
+}
+.container{
+    padding: 2%;
+    position: relative;
+}
+.container .middle{
+    padding-top: 10%;
+    padding-left: 28%;
+    padding-right: 30%; 
+    padding-bottom: 8%; 
+    position: relative;
+    border: solid 2px;
+    border-color: green;
+    height: 450px;
+}
+.form-control{
+    border-color:green;
+    border-left:solid 0.5em green;  
+}
+.btn-outline-success{
+    position: relative;
+}
+h6{
+    position: relative; 
+    font-style:italic;
+    text-align: center;
+}
+.select{
+    padding-left: 28%;
+    padding-right: 30%;
+    position: relative;
+    text-align: center;
+}
+.my-custom-scrollbar {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+

@@ -1,0 +1,17 @@
+{% extends "main/index.html" %}
+{% block content %}
+    <div class="container middle">
+        <form action="{% url 'home' %}"  method="GET" onsubmit="return validateForm()" name="myform" class="form-group">
+        <div class="form-group">
+            <label for="email">EmailID</label>
+            <input type="email" class="form-control" name="semail" placeholder="Enter your emailID">
+        </div>
+        <h6>--OR--</h6>
+        <div class="form-group">
+                <label for="eligibility">Eligibility</label>
+                <input type="text" class="form-control" name="seligibility" placeholder="Enter your eligibilityno.">
+            </div>
+        <input type="submit"  class="btn btn-outline-success" value="Process">
+        </form>
+    </div>
+{% endblock %}
